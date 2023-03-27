@@ -1,4 +1,5 @@
 import React from "react";
+import "./MovieDetailPopup.scss";
 
 export default function MovieDetailPopup(props) {
     return (

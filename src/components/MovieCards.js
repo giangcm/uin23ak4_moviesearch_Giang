@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./MovieCards.scss";
 
 export default function MovieCard(props){
     return(

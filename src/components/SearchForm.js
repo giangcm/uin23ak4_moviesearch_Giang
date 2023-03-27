@@ -1,4 +1,5 @@
 import React, {useRef} from "react";
+import "./SearchForm.scss";
 
 export default function SearchForm(props) {
     //  DOM rutte input

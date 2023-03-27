@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import MovieDetailPopup from "../components/MovieDetailPopup/MovieDetailPopup";
 import SearchForm from "../components/SearchForm/SearchForm";
 import SearchResult from "../components/SearchResult/SearchResult";
+import "./SearchPage.scss";
 
 
 export default function SearchPage() {
