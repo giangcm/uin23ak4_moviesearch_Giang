@@ -1,5 +1,7 @@
-import NavBar from "./components/NavBar/NavBar";
-import SearchPage from "./pages/SearchPage";
+
+import NavBar from "./components/NavBar";
+import SearchPage from "./Pages/SearchPage";
+
 
 function App() {
   return (

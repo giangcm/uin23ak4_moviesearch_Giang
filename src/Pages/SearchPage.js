@@ -1,8 +1,9 @@
 import Axios from "axios";
 import React, { useEffect, useState } from "react";
-import MovieDetailPopup from "../components/MovieDetailPopup/MovieDetailPopup";
-import SearchForm from "../components/SearchForm/SearchForm";
-import SearchResult from "../components/SearchResult/SearchResult";
+import MovieDetailPopup from "../components/MovieDetailPopup";
+import SearchForm from "../components/SearchForm";
+import SearchResult from "../components/SearchResult";
+
 import "./SearchPage.scss";
 
 
@@ -39,7 +40,7 @@ export default function SearchPage() {
     });
     promise
       .then((res) => {
-        if (res.data.totalResults == "1") {
+        if (res.data.totalResults === "1") {
           getMovieData(res.data.Search[0]);
           // return;
         }

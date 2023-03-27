@@ -1,5 +1,6 @@
 import React from "react";
-import MovieCard from "../MovieCard/MovieCard";
+import MovieCard from "./MovieCards";
+
 import "./SearchResult.scss";
 
 
