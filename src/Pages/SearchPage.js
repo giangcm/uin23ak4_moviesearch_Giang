@@ -11,6 +11,7 @@ export default function SearchPage() {
   const [searchData, setSearchData] = useState("");
   const [movieDetail, setMovieDetail] = useState("");
   const [isShowPopup, setIsShowPopup] = useState(false);
+  
 
   useEffect(() => {
     callApiInitialMovie();

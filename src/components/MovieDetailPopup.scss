@@ -1,92 +1,103 @@
 #movie_detail {
-    position: fixed;
-    bottom: 40px;
-    left: 0;
-    right: 0;
-    width: 900px;
-    background-color: #212121;
-    color: #fff;
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 52px 44px 20px;
-    margin: 0 auto;
-    z-index: 200;
-  
-    .content {
-      flex-basis: 45%;
-      padding: 12px 0 0 0;
-      .content_title {
-        margin-bottom: 16px;
-        font-size: 30px;
-        font-weight: 500;
-      }
-  
-      hr {
-        height: 4px;
-        background-color: #aeaeae;
-        border: none;
-        margin-bottom: 16px;
-      }
-  
-      .content_director,
-      .content_genre,
-      .content_release,
-      .content_voted,
-      .content_country,
-      .content_duration {
-        font-size: 20px;
-        font-weight: 500;
-      }
-  
-      .content_voted {
-        margin-bottom: 16px;
-      }
-  
-      .content_description {
-        font-size: 16px;
-        font-weight: 400;
-      }
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  width: 900px;
+  background-color: #212121;
+  color: #fff;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 52px 44px 20px;
+  margin: 0 auto;
+  z-index: 200;
+
+  .content {
+    flex-basis: 45%;
+    padding: 12px 0 0 0;
+    .content_title {
+      margin-bottom: 16px;
+      font-size: 30px;
+      font-weight: 500;
     }
-  
-    .image {
-      flex-basis: 50%;
-  
-      img {
-        display: block;
-        max-height: 550px;
-        height: 100%;
-        width: 100%;
-      }
-    }
-  
-    .close_button {
-      position: absolute;
-      top: 12px;
-      right: 12px;
-      background-color: #3f3f3f;
+
+    hr {
+      height: 4px;
+      background-color: #aeaeae;
       border: none;
-      color: #959595;
-      height: 36px;
-      width: 36px;
-      text-align: center;
-      text-decoration: none;
-      display: block;
-      font-size: 24px;
-      border-radius: 50%;
-      cursor: pointer;
-      transform: scale(1);
-      transition: all 0.2s linear;
-  
-      &:hover {
-        transform: scale(1.1);
-        color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .content_director,
+    .content_cast,
+    .content_genre,
+    .content_release,
+    .content_voted,
+    .content_country,
+    .content_duration {
+      font-size: 20px;
+      font-weight: 500;
+      span {
+        font-size: 18px;
+        font-style: italic;
       }
     }
+
+    // .content_cast {
+    //   span {
+    //     font-size: 18px;
+    //     font-style: italic;
+    //   }
+    // }
+
+    .content_voted {
+      margin-bottom: 16px;
+    }
+
+    .content_description {
+      font-size: 16px;
+      font-weight: 400;
+    }
   }
-  
-  .hidden {
-    display: none !important;
+
+  .image {
+    flex-basis: 50%;
+
+    img {
+      display: block;
+      max-height: 550px;
+      height: 100%;
+      width: 100%;
+    }
   }
-  
+
+  .close_button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: #3f3f3f;
+    border: none;
+    color: #959595;
+    height: 36px;
+    width: 36px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.2s linear;
+
+    &:hover {
+      transform: scale(1.1);
+      color: #fff;
+    }
+  }
+}
+
+.hidden {
+  display: none !important;
+}
